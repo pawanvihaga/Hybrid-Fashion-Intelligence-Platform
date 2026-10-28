@@ -142,6 +142,7 @@ if price_col:
 
 # 2. Machine Learning Models Initialization (TF-IDF & BERT & SVD)
 tfidf = TfidfVectorizer(stop_words='english', max_features=5000)
+df['features'] = df['features'].fillna('')
 tfidf_matrix = tfidf.fit_transform(df['features'])
 cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)
 
