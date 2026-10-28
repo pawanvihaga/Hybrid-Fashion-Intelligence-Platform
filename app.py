@@ -493,8 +493,6 @@ with tab5:
           color_counts,
           x='Color',
           y='Count',
-          color='Color',
-          color_discrete_sequence=px.colors.qualitative.Bold,
           title='Most Popular Base Colors',
       )
       fig_color.update_layout(
